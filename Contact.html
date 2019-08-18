@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<link href="style.css" rel="stylesheet">
+<head>
+	<title>Contact Us</title>
+</head>
+<body>
+	<div id="navbar">
+			<ul>
+				<li><a href="Contact.html">CONTACT</a></li>
+				<li><a href="Research.html">RESEARCH</a></li>
+				<li><a href="Resume.html">RESUME</a></li>
+				<li><a href="Blog.html">BLOG</a></li>
+				<li><a href="Home.html">HOME</a></li>
+			</ul>
+	</div>
+	<div id="content">
+			  <h1 style="font-size: 36px;"><em>Get in touch</em></h1>
+				Please feel free to contact me if you want any information regarding the work that I do. Any suggestions, queries and questions will be happily accepted.
+				<form name="MessageForm" onsubmit="validateForm()">
+				<p>Name: <input type="text" name="name"></p>
+				<p>Email: <input type="text" name="email"></p>
+				<p>Contact No.: <input type="text" name="contactno"></p>
+				<p>Message: <br><textarea name="Message" rows="10" cols="30 placeholder="Enter Message"></textarea></p>
+				<p><input type="submit" value="Send"></p>
+				</form>
+				<script>
+					function validateForm() {
+						var name = document.forms["MessageForm"]["name"].value;
+						var email = document.forms["MessageForm"]["email"].value;
+						var contactno =document.forms["MessageForm"]["contactno"].value;
+						var message = document.forms["MessageForm"]["Message"].value;
+
+						if (name == "" || email =="" || Message ==""){
+						alert("Empty fields found, Please fill form.");
+						}
+						else{
+						alert("Thank you for the feedback.");
+							}
+					}
+				</script>
+			<img src="contact.jpg" width="700" height="500" style="display: block; margin-left: 400px; margin-right: 400px;"></br>
+			<b>EMAIL</b></br>
+			madridistaabiral11@gmail.com</br>
+			<b>MOBILE</b></br>
+			9843313366</br>
+			<b>ADDRESS</b></br>
+			Boudha-6, Kathmandu, Nepal.</br>
+	</div>
+</body>
+</html>
